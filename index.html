@@ -1,0 +1,101 @@
+<html>
+  <head>
+        <link href="phone.css" rel="stylesheet" type="text/css">
+        <script>
+          function dis(val) 
+         { 
+           document.getElementById("result").value+=val 
+         } 
+         function clr() 
+         { 
+           document.getElementById("result").value="" 
+         } 
+        </script>
+        <style>
+          input[type = "text"]
+          {
+            background-color: white;
+          }
+        </style>
+    <title>HW1</title>
+  </head>
+  <body>
+    <div id="tab_bar">
+      <button class = "buttons" id= "dialer_b">Dialer</button>
+      <button class = "buttons" id= "contList_b">Contact List</button>
+      <button class = "buttons" id= "contAdd_b">Add Contact</button>
+    </div>
+    
+    <div id="content">
+        <div id="content_dialer">
+          <head>Dialer</head>
+          <p></p>
+          <body>
+            <table>
+              <tr>
+                <td colspan = "3"><input type = "text" id = "result"></td>
+              </tr>
+              <tr>
+                <td><input type = button class = "num_b" id= "1_b" value = "1" onclick="dis('1')"/></button></td>
+                <td><input type = button class = "num_b" id= "2_b" value = "2" onclick="dis('2')"/></button></td>
+                <td><input type = button class = "num_b" id= "3_b" value = "3" onclick="dis('3')"/></button></td>
+                </tr>
+              <tr>
+                  <td><input type = button class = "num_b" id= "4_b" value = "4" onclick="dis('4')"/></button></td>
+                  <td><input type = button class = "num_b" id= "5_b" value = "5" onclick="dis('5')"/></button></td>
+                  <td><input type = button class = "num_b" id= "6_b" value = "6" onclick="dis('6')"/></button></td>
+                  </tr>
+              <tr>
+                  <td><input type = button class = "num_b" id= "7_b" value = "7" onclick="dis('7')"/></button></td>
+                  <td><input type = button class = "num_b" id= "8_b" value = "8" onclick="dis('8')"/></button></td>
+                  <td><input type = button class = "num_b" id= "9_b" value = "9" onclick="dis('9')"/></button></td>
+                  </tr>
+              <tr>
+                  <td><input type = button class = "num_b" id= "*_b" value = "*" onclick="dis('*')"/></button></td>
+                  <td><input type = button class = "num_b" id= "0_b" value = "0" onclick="dis('0')"/></button></td>
+                  <td><input type = button class = "num_b" id= "#_b" value = "#" onclick="dis('#')"/></button></td>
+                  </tr> 
+              <tr>
+                <td><input type = button id= "dial" value = "Dial" onclick="clr()"></td>
+                <td><input type = button id= "clear" value = "Clear" onclick="clr()"></td>
+              </tr>   
+            </table>
+          </body>
+        </div>
+        <div id="content_list">
+            <head>Contact List</head>
+            <p></p>
+            <body>
+              <button class = "person" id= "p1">Billy</button>
+              <button class = "person" id= "p2">Bob</button>
+              <button class = "person" id= "p3">Jr</button>
+              <p></p>
+              <button class = "person" id= "p4">Billy-Bob jr.</button>
+              <button class = "person" id= "p5">Michael Scott</button>
+              <button class = "person" id= "p6">Dwight Schrute</button>
+              <p></p>
+              <button class = "person" id= "p7">Jim Halpert</button>
+              <button class = "person" id= "p8">Kevin Malone</button>
+              <button class = "person" id= "p9">Pam Beesley</button>
+            </body>
+        </div>
+        <div id="content_add">
+            <head>Add Contact</head>
+            <body>
+              <form>
+                Full Name: <br>
+                <input type = "text" name = "name"><br>
+                Phone Number: <br>
+                <input type = "text" name = "pnumber"><br>
+                Email: <br>
+                <input type = "text" name = "email"><br>
+                <button class = "addcontact" id= "addcontact">Add Contact</button>
+                <button class = "cancel" id= "cancel">Cancel</button>
+              </form>
+            </body>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="phone.js"></script>
+  </body>
+</html>

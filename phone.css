@@ -1,0 +1,11 @@
+.buttons{margin: 0px; border: 1px solid black; color : white; background-color: lightblue; width : 100px; 
+    height : 50px; border: none}
+
+.buttons:hover{color: lightcoral}
+html{
+    background-color: gray;
+}
+
+.person{width: 100px; height: 50px}
+
+.num_b{width: 50px; height: 25px}
