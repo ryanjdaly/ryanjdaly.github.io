@@ -1,4 +1,4 @@
-<html lang = "en">
+<html>
   <head>
         <link href="phone.css" rel="stylesheet" type="text/css">
         <script>
@@ -20,15 +20,14 @@
     <title>HW1</title>
   </head>
   <body>
-    <div id="tab_bar" role="navigation">
-      <button accesskey = "1" class = "buttons" id= "dialer_b">Dialer</button>
-      <button accesskey = "2" class = "buttons" id= "contList_b">Contact List</button>
-      <button accesskey = "3" class = "buttons" id= "contAdd_b">Add Contact</button>
-      <button accesskey = "4" class = "buttons" id= "help_b">Help</button>
+    <div id="tab_bar">
+      <button class = "buttons" id= "dialer_b">Dialer</button>
+      <button class = "buttons" id= "contList_b">Contact List</button>
+      <button class = "buttons" id= "contAdd_b">Add Contact</button>
     </div>
     
-    <div id="content" role ="main">
-        <div id="content_dialer" role ="dialer">
+    <div id="content">
+        <div id="content_dialer">
           <head>Dialer</head>
           <p></p>
           <body>
@@ -57,36 +56,30 @@
                   <td><input type = button class = "num_b" id= "#_b" value = "#" onclick="dis('#')"/></button></td>
                   </tr> 
               <tr>
-                <td><input type = button id= "dial" value = "Dial" onclick="clr()" accesskey="s"></td>
-                <td><input type = button id= "clear" value = "Clear" onclick="clr()" accesskey="c"></td>
+                <td><input type = button id= "dial" value = "Dial" onclick="clr()"></td>
+                <td><input type = button id= "clear" value = "Clear" onclick="clr()"></td>
               </tr>   
             </table>
           </body>
         </div>
-        <div id="content_list" role = "list of contacts">
+        <div id="content_list">
             <head>Contact List</head>
             <p></p>
             <body>
-              <table>
-                <tr>
-                  <th>Name</th>
-                </tr>
-                <tr>
-                  <td><button class = "person" id= "p1">Billy</button></td>
-                </tr>
-                <tr>
-                  <td><button class = "person" id= "p2">Bob</button></td>
-                </tr>
-                <tr>
-                  <td><button class = "person" id= "p1">Jr</button></td>
-                </tr>
-                <tr>
-                  <td><button class = "person" id= "p2">BillyBobJr.</button></td>
-                </tr>
-              </table>
+              <button class = "person" id= "p1">Billy</button>
+              <button class = "person" id= "p2">Bob</button>
+              <button class = "person" id= "p3">Jr</button>
+              <p></p>
+              <button class = "person" id= "p4">Billy-Bob jr.</button>
+              <button class = "person" id= "p5">Michael Scott</button>
+              <button class = "person" id= "p6">Dwight Schrute</button>
+              <p></p>
+              <button class = "person" id= "p7">Jim Halpert</button>
+              <button class = "person" id= "p8">Kevin Malone</button>
+              <button class = "person" id= "p9">Pam Beesley</button>
             </body>
         </div>
-        <div id="content_add" role = "add contact">
+        <div id="content_add">
             <head>Add Contact</head>
             <body>
               <form>
@@ -100,31 +93,6 @@
                 <button class = "cancel" id= "cancel">Cancel</button>
               </form>
             </body>
-        </div>
-        <div id="content_help" role = "help">
-          <head>Help</head>
-          <body>
-            <table>
-              <tr>
-                <th> Accessibility Feature </th>
-                <th> Keys </th>
-              </tr>
-              <tr>
-                <td>Traverse each item on each page</td>
-                <td>TAB</td>
-              </tr>
-              <tr>
-                <td>Dial number</td>
-                <td>SHIFT+ALT+s</td>
-              </tr>
-              <tr>
-                <td>Clear dialer</td>
-                <td>SHIFT+ALT+c</td>
-              </tr>
-            </table>
-            <img src="old_phone.jpg" alt = "an old timey telephone"><p></p>
-            Picture source : https://www.goodfreephotos.com/other-photos/old-style-classic-telephone.jpg.php
-          </body>
         </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
